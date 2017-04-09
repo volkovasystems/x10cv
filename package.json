@@ -1,0 +1,42 @@
+{
+  "name": "x10cv",
+  "version": "0.0.0",
+  "description": "Checks if the class is extensive.",
+  "main": "x10cv.js",
+  "support": "x10cv.support.js",
+  "deploy": "x10cv.deploy.js",
+  "browser": "x10cv.deploy.js",
+  "scripts": {
+    "build": "babel x10cv.js --out-file x10cv.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha x10cv-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/x10cv.git"
+  },
+  "keywords": [
+    "check",
+    "class",
+    "extensive",
+    "x10cv"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/x10cv/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/x10cv#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "falzy": "^0.17.0",
+    "protype": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.3.3"
+  }
+}

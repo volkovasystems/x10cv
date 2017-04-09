@@ -1,0 +1,28 @@
+{
+  "name": "x10cv",
+  "description": "Checks if the class is extensive.",
+  "main": "x10cv.deploy.js",
+  "support": "x10cv.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "class",
+    "extensive",
+    "x10cv"
+  ],
+  "homepage": "https://github.com/volkovasystems/x10cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.17.0",
+    "protype": "^0.21.0"
+  }
+}
