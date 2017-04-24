@@ -48,12 +48,14 @@
 	@include:
 		{
 			"falzy": "falzy",
+			"mrkd": "mrkd",
 			"protype": "protype"
 		}
 	@end-include
 */
 
 const falzy = require( "falzy" );
+const mrkd = require( "mrkd" );
 const protype = require( "protype" );
 
 const EXTENSIVE = Symbol.for( "extensive" );
@@ -71,7 +73,7 @@ const x10cv = function x10cv( blueprint ){
 		throw new Error( "invalid blueprint" );
 	}
 
-	return ( blueprint[ EXTENSIVE ] === EXTENSIVE );
+	return mrkd( EXTENSIVE, blueprint, true );
 };
 
 module.exports = x10cv;
