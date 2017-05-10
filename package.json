@@ -1,6 +1,6 @@
 {
   "name": "x10cv",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Checks if the class is extensive.",
   "main": "x10cv.js",
   "support": "x10cv.support.js",
@@ -32,7 +32,7 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "falzy": "^0.19.0",
-    "mrkd": "^0.2.0",
+    "mrkd": "^0.4.0",
     "protype": "^0.21.0"
   },
   "devDependencies": {
@@ -41,6 +41,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.5.1"
   }
 }
