@@ -52,15 +52,13 @@
 	@include:
 		{
 			"falzy": "falzy",
-			"mrkd": "mrkd",
-			"protype": "protype"
+			"mrkd": "mrkd"
 		}
 	@end-include
 */
 
 const falzy = require( "falzy" );
 const mrkd = require( "mrkd" );
-const protype = require( "protype" );
 
 const EXTENSIVE = Symbol.for( "extensive" );
 
@@ -73,7 +71,7 @@ const x10cv = function x10cv( blueprint ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( blueprint ) || !protype( blueprint, FUNCTION ) ){
+	if( falzy( blueprint ) || typeof blueprint != "function" ){
 		throw new Error( "invalid blueprint" );
 	}
 

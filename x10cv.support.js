@@ -52,15 +52,13 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"mrkd": "mrkd",
-              			"protype": "protype"
+              			"mrkd": "mrkd"
               		}
               	@end-include
               */var _for = require("babel-runtime/core-js/symbol/for");var _for2 = _interopRequireDefault(_for);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var mrkd = require("mrkd");
-var protype = require("protype");
 
 var EXTENSIVE = (0, _for2.default)("extensive");
 
@@ -73,7 +71,7 @@ var x10cv = function x10cv(blueprint) {
                                        	@end-meta-configuration
                                        */
 
-	if (falzy(blueprint) || !protype(blueprint, FUNCTION)) {
+	if (falzy(blueprint) || typeof blueprint != "function") {
 		throw new Error("invalid blueprint");
 	}
 
