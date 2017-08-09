@@ -5,6 +5,6 @@ let Hello = function Hello( ){ };
 
 Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
 
-assert.equal( x10cv( Hello ), true, "should be true" );
+assert.equal( x10cv( Hello ), true, "should be equal to true" );
 
 console.log( "ok" );
