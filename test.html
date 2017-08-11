@@ -19,7 +19,6 @@
 			QUnit.test( "x10cv unit test", function( assert ) {
 
 				let Hello = function Hello( ){ };
-
 				Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
 
 				assert.equal( x10cv( Hello ), true, "should be equal to true" );
