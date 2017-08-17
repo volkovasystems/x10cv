@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-17T03:51:38.703Z",
+	"end": "2017-08-17T03:52:32.240Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "x10cv",
+			"duration": 0,
+			"start": "2017-08-17T03:52:31.924Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "x10cv",
+			"duration": 133,
+			"start": "2017-08-17T03:52:31.924Z",
+			"end": "2017-08-17T03:52:32.057Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-17T03:52:31.925Z",
+					"end": "2017-08-17T03:52:31.926Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "x10cv",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-17T03:52:32.055Z",
+					"end": "2017-08-17T03:52:32.056Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "x10cv",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-17T03:52:32.057Z",
+					"end": "2017-08-17T03:52:32.057Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "x10cv"
+				}
+			]
+		},
+		{
+			"name": "`x10cv with function containing Symbol.for( 'extensive' ) property and value`",
+			"duration": 132,
+			"start": "2017-08-17T03:52:31.925Z",
+			"end": "2017-08-17T03:52:32.057Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-17T03:52:31.925Z",
+					"end": "2017-08-17T03:52:32.055Z",
+					"duration": 130,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
