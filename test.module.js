@@ -70,6 +70,17 @@ const path = require( "path" );
 
 describe( "x10cv", ( ) => {
 
+	describe( "`x10cv with function containing Symbol.for( 'extensive' ) property and value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let Hello = function Hello( ){ };
+			Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+			assert.equal( x10cv( Hello ), true );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +89,18 @@ describe( "x10cv", ( ) => {
 //: @client:
 
 describe( "x10cv", ( ) => {
+
+	describe( "`x10cv with function containing Symbol.for( 'extensive' ) property and value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let Hello = function Hello( ){ };
+			Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+			assert.equal( x10cv( Hello ), true );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +109,30 @@ describe( "x10cv", ( ) => {
 //: @bridge:
 
 describe( "x10cv", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`x10cv with function containing Symbol.for( 'extensive' ) property and value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let Hello = function Hello( ){ };
+					Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+					return x10cv( Hello );
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
