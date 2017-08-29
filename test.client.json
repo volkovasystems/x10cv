@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-17T03:51:38.703Z",
-	"end": "2017-08-17T03:52:32.240Z",
+	"start": "2017-08-29T03:34:19.436Z",
+	"end": "2017-08-29T03:34:58.447Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,37 +28,37 @@
 		{
 			"name": "x10cv",
 			"duration": 0,
-			"start": "2017-08-17T03:52:31.924Z",
+			"start": "2017-08-29T03:34:58.112Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "x10cv",
-			"duration": 133,
-			"start": "2017-08-17T03:52:31.924Z",
-			"end": "2017-08-17T03:52:32.057Z",
+			"duration": 152,
+			"start": "2017-08-29T03:34:58.113Z",
+			"end": "2017-08-29T03:34:58.265Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-17T03:52:31.925Z",
-					"end": "2017-08-17T03:52:31.926Z",
-					"duration": 1,
+					"start": "2017-08-29T03:34:58.114Z",
+					"end": "2017-08-29T03:34:58.114Z",
+					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "x10cv",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-17T03:52:32.055Z",
-					"end": "2017-08-17T03:52:32.056Z",
+					"start": "2017-08-29T03:34:58.263Z",
+					"end": "2017-08-29T03:34:58.264Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "x10cv",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-17T03:52:32.057Z",
-					"end": "2017-08-17T03:52:32.057Z",
-					"duration": 0,
+					"start": "2017-08-29T03:34:58.265Z",
+					"end": "2017-08-29T03:34:58.266Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "x10cv"
 				}
@@ -66,15 +66,15 @@
 		},
 		{
 			"name": "`x10cv with function containing Symbol.for( 'extensive' ) property and value`",
-			"duration": 132,
-			"start": "2017-08-17T03:52:31.925Z",
-			"end": "2017-08-17T03:52:32.057Z",
+			"duration": 152,
+			"start": "2017-08-29T03:34:58.113Z",
+			"end": "2017-08-29T03:34:58.265Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-17T03:52:31.925Z",
-					"end": "2017-08-17T03:52:32.055Z",
-					"duration": 130,
+					"start": "2017-08-29T03:34:58.113Z",
+					"end": "2017-08-29T03:34:58.263Z",
+					"duration": 150,
 					"state": "pass"
 				}
 			],
